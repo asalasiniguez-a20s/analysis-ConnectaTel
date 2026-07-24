@@ -28,47 +28,48 @@ bash
 pip install pandas numpy matplotlib seaborn
 
 📘 Cómo reproducir el análisis
-Abre S7_Version-Estudiante-Project-ConnectaTel.ipynb.
-Sube los archivos plans.csv, users_latam.csv y usage.csv a la carpeta /datasets/ (en Colab puedes usar files.upload() si no vienen precargados en el entorno).
+- Abre S7_Version-Estudiante-Project-ConnectaTel.ipynb.
 
-Ejecuta las celdas en orden, ya que los pasos posteriores dependen de las tablas construidas en pasos anteriores (ej. user_profile).
+- Sube los archivos plans.csv, users_latam.csv y usage.csv a la carpeta /datasets/ (en Colab puedes usar files.upload() si no vienen precargados en el entorno).
 
-Revisa los bloques de markdown (💡 Insights y ✍️ Comentarios) donde se documentan las decisiones de limpieza y los hallazgos de cada etapa.
+- Ejecuta las celdas en orden, ya que los pasos posteriores dependen de las tablas construidas en pasos anteriores (ej. user_profile).
+
+- Revisa los bloques de markdown (💡 Insights y ✍️ Comentarios) donde se documentan las decisiones de limpieza y los hallazgos de cada etapa.
 
 
 🧠 Objetivo del análisis
-Identificar problemas de calidad de datos (nulos, sentinels, fechas inválidas).
+- Identificar problemas de calidad de datos (nulos, sentinels, fechas inválidas).
 
-Construir un perfil de uso por usuario a partir de los registros de actividad.
+- Construir un perfil de uso por usuario a partir de los registros de actividad.
 
-Analizar comportamientos, distribuciones y outliers en variables de uso (mensajes, llamadas, minutos) y demográficas (edad).
+- Analizar comportamientos, distribuciones y outliers en variables de uso (mensajes, llamadas, minutos) y demográficas (edad).
 
-Segmentar a los clientes por nivel de uso y grupo de edad.
+- Segmentar a los clientes por nivel de uso y grupo de edad.
 
-Generar insights accionables para el equipo comercial de ConnectaTel (campañas de fidelización, promoción de planes, ofertas personalizadas).
+- Generar insights accionables para el equipo comercial de ConnectaTel (campañas de fidelización, promoción de planes, ofertas personalizadas).
 
 
 🗂️ Datasets
 Archivo	Descripción
 
-plans.csv	Precio, minutos y GB incluidos, costo por extra de cada plan.
+- plans.csv	Precio, minutos y GB incluidos, costo por extra de cada plan.
 
-users_latam.csv	Edad, ciudad, plan contratado, fecha de registro y de cancelación por usuario.
+- users_latam.csv	Edad, ciudad, plan contratado, fecha de registro y de cancelación por usuario.
 
-usage.csv	Eventos de llamada/mensaje por usuario: tipo, duración, longitud y fecha.
+- usage.csv	Eventos de llamada/mensaje por usuario: tipo, duración, longitud y fecha.
 
 
 🧩 Etapas del análisis
-Carga y exploración inicial de los tres datasets.
+- Carga y exploración inicial de los tres datasets.
 
-Identificación de nulos, sentinels (-999 en age, ? en city) y fechas fuera de rango.
+- Identificación de nulos, sentinels (-999 en age, ? en city) y fechas fuera de rango.
 
-Limpieza: imputación de age con la mediana, city a NA, fechas inválidas a NaT.
+- Limpieza: imputación de age con la mediana, city a NA, fechas inválidas a NaT.
 
-Agregación de usage por usuario y construcción de user_profile.
+- Agregación de usage por usuario y construcción de user_profile.
 
-Visualización de distribuciones (histogramas) y detección de outliers (boxplots, método IQR).
+- Visualización de distribuciones (histogramas) y detección de outliers (boxplots, método IQR).
 
-Segmentación de clientes por grupo_uso (Bajo/Medio/Alto) y grupo_edad (Joven/Adulto/Adulto Mayor).
+- Segmentación de clientes por grupo_uso (Bajo/Medio/Alto) y grupo_edad (Joven/Adulto/Adulto Mayor).
 
-Insight ejecutivo con hallazgos y recomendaciones comerciales.
+- Insight ejecutivo con hallazgos y recomendaciones comerciales.
