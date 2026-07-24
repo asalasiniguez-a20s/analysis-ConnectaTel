@@ -12,7 +12,7 @@ datasets/ → Carpeta con los archivos plans.csv, users_latam.csv y usage.csv.
 
 Haz clic en el siguiente botón:
 
-Mostrar imagen
+[Mostrar imagen](https://colab.research.google.com/github/asalasiniguez-a20s/analysis-ConnectaTel/blob/main/S7_Version_Estudiante_Project_ConnectaTel.ipynb)
 
 O:
 
